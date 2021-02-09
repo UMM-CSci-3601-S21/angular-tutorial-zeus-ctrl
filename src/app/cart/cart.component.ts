@@ -7,7 +7,7 @@ import { FormBuilder } from '@angular/forms';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent {
+export class CartComponent implements OnInit {
   items = this.cartService.getItems();
   checkoutForm = this.formBuilder.group({
     name: '',
